@@ -30,24 +30,24 @@ The app keeps the interface intentionally straightforward: a task form, a table,
 
 ```text
 src/main/java/com/taskmanager
-├── Main.java
+├── Main.java                      Starts FlatLaf, creates dependencies, and opens the app window.
 ├── dao
-│   └── TaskDao.java
+│   └── TaskDao.java               Runs SQL queries for creating, reading, updating, and deleting tasks.
 ├── db
-│   └── DatabaseConnection.java
+│   └── DatabaseConnection.java    Stores MySQL connection settings and creates the tasks table.
 ├── model
-│   ├── Priority.java
-│   ├── SortOption.java
-│   ├── Task.java
-│   ├── TaskFilter.java
-│   ├── TaskStats.java
-│   └── TaskStatus.java
+│   ├── Priority.java              Defines Low, Medium, and High task priorities.
+│   ├── SortOption.java            Defines sort choices used by the data layer.
+│   ├── Task.java                  Represents one task record.
+│   ├── TaskFilter.java            Holds filter/search values for task queries.
+│   ├── TaskStats.java             Holds total, completed, and overdue task counts.
+│   └── TaskStatus.java            Defines Pending and Completed task states.
 ├── service
-│   └── TaskService.java
+│   └── TaskService.java           Validates input and coordinates task actions.
 └── ui
-    ├── OverdueTaskRenderer.java
-    ├── TaskManagerFrame.java
-    └── TaskTableModel.java
+    ├── OverdueTaskRenderer.java   Highlights overdue rows in the task table.
+    ├── TaskManagerFrame.java      Builds the Swing form, buttons, filters, table, and stats label.
+    └── TaskTableModel.java        Connects task objects to the JTable columns.
 ```
 
 ## Database Setup
