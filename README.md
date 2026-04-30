@@ -1,21 +1,20 @@
 # Task Management System
 
-A modern Java desktop task manager built with Swing, FlatLaf Dark, JDBC, and MySQL.
+A simple Java desktop task manager built with Swing, FlatLaf Dark, JDBC, and MySQL.
 
-The app gives you a clean desktop workspace for creating, tracking, filtering, and completing tasks. It is intentionally small and easy to read, with separate classes for the UI, database access, business logic, and domain models.
+The app keeps the interface intentionally straightforward: a task form, a table, a small search/status filter, and basic action buttons. The code is split into separate classes for the UI, database access, business logic, and domain models.
 
 ## Features
 
 - Create, edit, and delete tasks
 - Track title, description, priority, category, deadline, and status
 - Mark tasks as `Pending` or `Completed`
-- Filter by status, priority, and category
+- Filter by status
 - Search tasks by title
-- Sort by deadline or priority
 - Highlight overdue pending tasks
-- Show live task statistics
+- Show basic task statistics
 - Auto-create the MySQL `tasks` table on startup
-- FlatLaf Dark UI with a cleaner modern layout
+- FlatLaf Dark UI with a simple Swing layout
 
 ## Tech Stack
 

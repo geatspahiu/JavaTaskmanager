@@ -12,12 +12,9 @@ import javax.swing.UIManager;
 public class Main {
     public static void main(String[] args) {
         FlatDarkLaf.setup();
-        UIManager.put("Component.arc", 10);
-        UIManager.put("Button.arc", 10);
-        UIManager.put("TextComponent.arc", 10);
-        UIManager.put("Table.showHorizontalLines", true);
-        UIManager.put("Table.showVerticalLines", false);
-        UIManager.put("Table.rowHeight", 34);
+        UIManager.put("Component.arc", 6);
+        UIManager.put("Button.arc", 6);
+        UIManager.put("TextComponent.arc", 6);
 
         SwingUtilities.invokeLater(() -> {
             DatabaseConnection databaseConnection = new DatabaseConnection();
